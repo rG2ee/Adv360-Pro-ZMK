@@ -56,3 +56,15 @@ backtick: backtick {
 
 };
 
+
+three_dots: three_dots {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &mo 1 &kp LEFT_ALT>
+                , <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_3>
+                , <&macro_release &mo 1 &kp LEFT_ALT>
+                ;
+
+};
+
