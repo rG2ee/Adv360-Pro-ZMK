@@ -13,7 +13,7 @@ endif
 
 all:
 	git pull
-	sudo rm firmware/*.uf2
+	sudo rm -f firmware/*.uf2
 	$(shell bin/get_version.sh >> /dev/null)
 	$(DOCKER) build --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
