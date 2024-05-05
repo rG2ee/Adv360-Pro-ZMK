@@ -17,7 +17,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
-#include <dt-bindings/zmk/keys.h>
 
 / {
   behaviors {
@@ -82,7 +81,7 @@
         layer_Layer__4 {
             bindings = <
  &trans           &trans         &trans                  &trans                  &trans           &trans            &trans                                                  &trans                &trans                   &trans                 &trans            &trans         &trans  &trans
- &trans              &kt   &kp QUESTION  &mt RIGHT_ALT NUMBER_8  &mt RIGHT_ALT NUMBER_9  &kp EXCLAMATION            &trans                                                  &trans  &kp NON_US_BACKSLASH                &kp PIPE2  &kp RIGHT_PARENTHESIS         &kp CARET         &trans  &trans
+ &trans            &none   &kp QUESTION  &mt RIGHT_ALT NUMBER_8  &mt RIGHT_ALT NUMBER_9  &kp EXCLAMATION            &trans                                                  &trans  &kp NON_US_BACKSLASH                &kp PIPE2  &kp RIGHT_PARENTHESIS         &kp CARET         &trans  &trans
  &trans           &trans  &kp AMPERSAND                  &trans                  &trans           &trans            &trans  &trans  &trans                  &trans  &trans  &trans              &kp STAR     &kp LEFT_PARENTHESIS              &kp SLASH  &kp GREATER_THAN         &trans  &trans
  &trans  &kp NON_US_HASH     &kp DOLLAR                  &trans                  &trans           &trans                            &trans                  &trans                     &kp RIGHT_BRACKET  &mt LEFT_SHIFT NUMBER_5            &kp AT_SIGN          &kp PIPE  &kp LESS_THAN  &trans
  &trans           &trans         &trans                  &trans                  &trans                             &trans  &trans  &trans                  &trans  &trans  &trans                                         &trans                 &trans            &trans         &trans  &trans
