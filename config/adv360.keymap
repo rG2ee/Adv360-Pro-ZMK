@@ -44,7 +44,7 @@
    &kp TAB      &kp X          &kp V             &kp L      &kp C   &kp W               &none                                                                 &none   &kp K   &kp H      &kp G     &kp F     &kp Q           &mo 3
    &kp ESC      &kp U          &kp I             &kp A      &kp E   &kp O               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp S   &kp N      &kp R     &kp T     &kp D           &kp Z
  &kp LSHFT   &kp APOS  &kp SEMICOLON  &kp LEFT_BRACKET      &kp P   &kp Y                                 &kp HOME                  &kp PG_UP                         &kp B   &kp M  &kp COMMA   &kp DOT     &kp J       &kp RSHFT
-     &mo 2  &kp GRAVE          &none          &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT           &mo 2
+     &mo 2  &kp GRAVE          &mo 4          &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT           &mo 2
             >;
         };
 
@@ -80,11 +80,11 @@
 
         layer_Layer__4 {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+ &trans           &trans         &trans  &trans  &trans           &trans            &trans                                                  &trans             &trans                 &trans                 &trans     &trans  &trans  &trans
+ &trans           &trans   &kp QUESTION   &none  &trans  &kp EXCLAMATION            &trans                                                  &trans             &trans                 &trans  &kp RIGHT_PARENTHESIS  &kp CARET  &trans  &trans
+ &trans           &trans  &kp AMPERSAND  &trans  &trans           &trans            &trans  &trans  &trans                  &trans  &trans  &trans           &kp STAR  &kp RIGHT_PARENTHESIS                 &trans     &trans  &trans  &trans
+ &trans  &kp NON_US_HASH     &kp DOLLAR  &trans  &trans           &trans                            &trans                  &trans                  &kp RIGHT_BRACKET                 &trans            &kp AT_SIGN   &kp PIPE  &trans  &trans
+ &trans           &trans         &trans  &trans  &trans                             &trans  &trans  &trans                  &trans  &trans  &trans                                    &trans                 &trans     &trans  &trans  &trans
             >;
         };
 
