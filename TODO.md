@@ -6,12 +6,12 @@ dutiraendutira
 
 modifiers:
 
-maybe remove layer 5??
-at least the left side?
-
-navigation in all layers??
-shift left + shift right = tabs hold  
-same for other layers
+- [] maybe remove layer 5?? 
+- at least the left side?
+- navigation in all layers??
+- shift left + shift right = tabs hold  
+- same for other layers
+- backtick not working properly
 formatting 
 
 ## working layer 3 and 4 
