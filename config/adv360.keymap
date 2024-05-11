@@ -42,7 +42,7 @@
             bindings = <
  &kp ESC     &kp N1         &kp N2            &kp N3     &kp N4  &kp N5              &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp UNDERSCORE
    &kp TAB      &kp X          &kp V             &kp L      &kp C   &kp W               &none                                                                 &none   &kp K   &kp H      &kp G     &kp F     &kp Q           &kp MINUS
-   &mo 4      &kp U          &kp I             &kp A      &kp E   &kp O               &none  &none  &none                   &kp LGUI  &kp RCTRL      &none   &kp S   &kp N      &kp R     &kp T     &kp D           &kp Z
+   &mo 4      &kp U          &kp I             &kp A      &kp E   &kp O               &none  &none  &kp ESC                   &kp LGUI  &kp RCTRL      &none   &kp S   &kp N      &kp R     &kp T     &kp D           &kp Z
  &kp LSHFT   &kp APOS  &kp SEMICOLON  &kp LEFT_BRACKET      &kp P   &kp Y                               &kp LALT                  &mo 4                        &kp B   &kp M  &kp COMMA   &kp DOT     &kp J       &kp RSHFT
  &kp LCTRL       &kp LGUI          &none          &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &mo 5                  &mo 5  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp PG_UP       &kp PG_DN &kp LCTRL
             >;
@@ -95,9 +95,9 @@
                     bindings = <
           &kp F1          &kp F2            &kp F3                 &kp F4          &kp F5    &kp F6             &trans                                                    &trans             &kp F7        &kp F8         &kp F9          &kp F10  &kp F11  &kp F12
           &none         &kp PG_UP        &none          &kp UP         &none         &kp PG_DN            &none                                                                     &none   &none       &kp N7     &kp N8    &kp N9   &none   &none
-          &none          &kp HOME         &kp LEFT         &kp DOWN          &kp RIGHT         &kp END                  &none   &none   &none                  &none       &none  &none   &none               &kp N4    &kp N5    &kp N6   &none   &none
-          &kp LSHFT         &none         &none         &none   &none         &none                                  &none                       &none                                       &none       &kp N1    &kp N2    &kp N3   &none   &kp RSHFT
-          &kp LCTRL         &none         &none         &kp LEFT  &kp RIGHT                                &none   &none   &none                      &kp N0  &none         &none         &kp UP      &kp DOWN   &kp PG_UP       &kp PG_DN   &kp RCTRL
+          &none          &kp HOME         &kp LEFT         &kp DOWN          &kp RIGHT         &kp END                  &none   &trans   &trans                 &trans       &trans  &none   &none               &kp N4    &kp N5    &kp N6   &none   &none
+          &kp LSHFT         &none         &none         &none   &none         &none                                  &trans                       &none                                       &none       &kp N1    &kp N2    &kp N3   &none   &kp RSHFT
+          &kp LCTRL         &none         &none         &kp LEFT  &kp RIGHT                                &trans   &trans   &trans                      &kp N0  &trans         &trans         &kp UP      &kp DOWN   &kp PG_UP       &kp PG_DN   &kp RCTRL
                     >;
                 };
 

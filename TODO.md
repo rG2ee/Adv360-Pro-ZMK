@@ -1,18 +1,17 @@
-dutiraendutira
-
-
-
 
 
 modifiers:
 
 - [] maybe remove layer 5?? 
-- at least the left side?
+  - at least the left side?
 - navigation in all layers??
 - shift left + shift right = tabs hold  
 - same for other layers
-- backtick not working properly
 formatting 
+- train jetbrains shortcuts
+- and maybe at some point in time vim motions?  -> try for two weeks
+
+
 
 ## working layer 3 and 4 
 ```
