@@ -12,7 +12,6 @@ endif
 .PHONY: all left clean_firmware clean_image clean
 
 all:
-	git pull
 	sudo rm -f firmware/*.uf2
 	$(shell bin/get_version.sh >> /dev/null)
 	$(DOCKER) build --tag zmk --file Dockerfile .
