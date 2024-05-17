@@ -1,0 +1,26 @@
+{
+	"name": "Debian-Adv360-Pro-ZMK",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+		// fyi: it is possible to define multiple comopose files
+		// e.g. "docker-compose.workspace.yaml"
+	],
+	"service": "workspace",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"upgradePackages": "true"
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "latest",
+			"ppa": "false"
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+	"runArgs": [
+		// restrict usage of all cores
+		"--cpuset-cpus", "0-7"
+	],
+	// todo make this relative to this folden like
+	// "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+	"postCreateCommand": "bash /home/user/postCreateCommand.sh"
+}

@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  workspace:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        - GIT_USER=user
+        - GIT_EMAIL=user@123.de
