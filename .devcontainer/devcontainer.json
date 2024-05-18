@@ -21,6 +21,5 @@
 		"--cpuset-cpus", "0-7"
 	],
 	// todo make this relative to this folden like
-	// "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
-	"postCreateCommand": "bash /home/user/postCreateCommand.sh"
+	 "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
 }
