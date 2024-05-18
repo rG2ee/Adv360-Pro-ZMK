@@ -125,5 +125,4 @@ fi\n" >> /home/user/.zshrc
 
 ####################################################################################################### \
 
-COPY .env.tailscale /home/user/.env.tailscale
 COPY postCreateCommand.sh /home/user/postCreateCommand.sh

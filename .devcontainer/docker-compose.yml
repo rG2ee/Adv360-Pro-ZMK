@@ -8,3 +8,7 @@ services:
       args:
         - GIT_USER=user
         - GIT_EMAIL=user@123.de
+
+    volumes:
+      - ./.ssh:/home/user/.ssh:ro
+      - ./.env:/home/user/.env:ro

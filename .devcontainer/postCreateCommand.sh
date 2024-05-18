@@ -21,7 +21,7 @@ if [ "$RUNNING" = false ]; then
     sleep 5
 fi
 
-source /home/user/.env.tailscale
+source /home/user/.env/.env.tailscale
 sudo tailscale up --authkey $TAIL_SCALE_AUTH_KEY --hostname=devcontainer-`hostname`  > /home/user/log.txt 2>&1
-sudo rm /home/user/.env.tailscale
+sudo rm -r /home/user/.env
 sudo rm /home/user/postCreateCommand.sh
