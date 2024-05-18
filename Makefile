@@ -1,4 +1,4 @@
-DOCKER := /snap/bin/docker
+DOCKER := /usr/bin/docker
 TIMESTAMP := $(shell date -u +"%Y%m%d%H%M")
 COMMIT := $(shell git rev-parse --short HEAD 2>/dev/null)
 ifeq ($(shell uname),Darwin)
@@ -14,7 +14,7 @@ endif
 all:
 	sudo rm -f firmware/*.uf2
 	$(shell bin/get_version.sh >> /dev/null)
-	$(DOCKER) build --tag zmk --file Dockerfile .
+	$(DOCKER) build --network=host --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
 	    --cpuset-cpus 0-3 \
 		-v $(PWD)/firmware:/app/firmware$(SELINUX1) \
@@ -28,7 +28,7 @@ all:
 left:
 	git pull
 	$(shell bin/get_version.sh >> /dev/null)
-	$(DOCKER) build --tag zmk --file Dockerfile .
+	$(DOCKER) build --network=host --tag zmk --file Dockerfile .
 	$(DOCKER) run --rm -it --name zmk \
 		--cpuset-cpus 0-3 \
 		-v $(PWD)/firmware:/app/firmware$(SELINUX1) \
