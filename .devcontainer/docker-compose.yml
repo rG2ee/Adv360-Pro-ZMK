@@ -12,3 +12,4 @@ services:
     volumes:
       - ./.ssh:/home/user/.ssh:ro
       - ./.env:/home/user/.env:ro
+      - C:\Users\user\Desktop\projects:/home/user/projects
