@@ -1,4 +1,4 @@
-DOCKER := /usr/bin/docker
+DOCKER ?= /usr/bin/docker
 TIMESTAMP := $(shell date -u +"%Y%m%d%H%M")
 COMMIT := $(shell git rev-parse --short HEAD 2>/dev/null)
 ifeq ($(shell uname),Darwin)

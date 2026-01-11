@@ -57,6 +57,16 @@ colima start
 sudo apt-get install docker make
 ```
 
+#### Nix (mit direnv)
+
+Wenn du [Nix](https://nixos.org/) und [direnv](https://direnv.net/) verwendest, erstelle eine `.envrc` Datei mit:
+
+```shell
+use flake
+```
+
+Die mitgelieferte `flake.nix` stellt automatisch `make`, `git` und `docker` bereit. Die Makefile wird automatisch so konfiguriert, dass `sudo docker` verwendet wird.
+
 ### Building the firmware
 
 1. Execute `make` to build firmware for both halves or `make left` to only build firmware for the left hand side.
